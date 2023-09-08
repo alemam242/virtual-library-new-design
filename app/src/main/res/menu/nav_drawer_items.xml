@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/home"
+            android:title="HOME"
+            android:icon="@drawable/home_icon"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/profile"
+            android:title="PROFILE"
+            android:icon="@drawable/profile_icon"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/favourite"
+            android:title="FAVOURITE"
+            android:icon="@drawable/heart_fill"
+            android:checkable="true"
+            android:iconTint="#000000"
+            />
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single"
+        >
+            <item android:title="Setting">
+                <menu>
+                    <item
+                        android:id="@+id/changePassword"
+                        android:title="Change Password"
+                        android:icon="@drawable/change_password"
+                        android:checkable="true"
+                        />
+
+                    <item
+                        android:id="@+id/deleteAccount"
+                        android:title="Delete Account"
+                        android:icon="@drawable/delete"
+                        android:checkable="true"
+                        />
+                </menu>
+            </item>
+        <item
+            android:id="@+id/logout"
+            android:title="LOGOUT"
+            android:icon="@drawable/logout_icon"
+            android:checkable="true"
+            />
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/share"
+            android:title="SHARE"
+            android:icon="@drawable/share_icon"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/about"
+            android:title="ABOUT"
+            android:icon="@drawable/about_icon"
+            android:checkable="true"
+            />
+
+    </group>
+</menu>

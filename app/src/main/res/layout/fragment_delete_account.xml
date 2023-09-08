@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DeleteAccount"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/bottom_shade">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/warning"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        />
+
+<TextView
+    android:id="@+id/tvWarning"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Deleting your account is permanent"
+    android:textSize="20sp"
+    android:textColor="#000000"
+    android:background="@drawable/textview_bg"
+    android:padding="10dp"
+    android:textStyle="bold"
+    android:justificationMode="inter_word"
+    />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue to Delete"
+        android:backgroundTint="@color/gnt_red"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>

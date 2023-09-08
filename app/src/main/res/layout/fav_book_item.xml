@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bottom_shade">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <ImageView
+        android:scaleType="fitCenter"
+        android:id="@+id/bookImage"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:src="@drawable/book_demo"
+        android:layout_marginBottom="5dp"
+        android:layout_centerInParent="true"
+        />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/bookImage"
+            >
+
+            <ImageView
+                android:id="@+id/heartIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/heart_fill"
+                app:tint = "#920B01"
+                style="?android:borderlessButtonStyle"
+                />
+
+            <ImageView
+                android:id="@+id/removeButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/remove_book"
+                app:tint = "#920B01"
+                style="?android:borderlessButtonStyle"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Name\nHi"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/bookAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Author"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        />
+
+    <Button
+        android:id="@+id/bookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="বই পড়ি"
+        android:textSize="12sp"
+        android:background="@drawable/button_bg_selector"
+        style="?android:borderlessButtonStyle"
+        />
+
+</LinearLayout>

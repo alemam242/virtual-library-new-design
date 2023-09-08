@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.VirtualLibrary" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/primary</item>
+         <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="android:forceDarkAllowed" tools:ignore="NewApi">false</item>
+    </style>
+
+    <style name="Theme.VirtualLibrary" parent="Base.Theme.VirtualLibrary" />
+
+    <style name="ShapeAppearance">
+        <item name="neumorph_cornerSize">15dp</item>
+    </style>
+
+</resources>

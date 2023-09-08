@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Name"
+        android:padding="10dp"
+        android:inputType="textCapWords"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/UserName"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:padding="10dp"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textSize="20sp"
+        android:backgroundTint="@color/button_bg"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        />
+
+
+</LinearLayout>

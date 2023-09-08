@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Home"
+        android:title="@string/nav_item_home"
+        android:icon="@drawable/home_icon"
+        app:showAsAction="withText"
+        android:checkable="false"
+        />
+
+    <item
+        android:id="@+id/Favourite"
+        android:title="@string/nav_item_wishlist"
+        android:icon="@drawable/heart_fill"
+        app:showAsAction="withText"
+        android:checkable="false"
+        android:iconTint="#000000"
+        />
+
+    <item
+        android:id="@+id/Add"
+        android:title="@string/nav_item_add"
+        android:icon="@drawable/add_icon"
+        android:checkable="false"
+        android:visible="false"
+        />
+
+    <item
+        android:id="@+id/Notification"
+        android:title="@string/nav_item_notify"
+        android:icon="@drawable/notification_icon"
+        app:showAsAction="withText"
+        android:checkable="true"
+        />
+
+    <item
+        android:id="@+id/Profile"
+        android:title="@string/nav_item_profile"
+        android:icon="@drawable/profile_icon"
+        app:showAsAction="withText"
+        android:checkable="true"
+        />
+
+
+</menu>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loadPdf"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        >
+
+        <TextView
+            android:id="@+id/bookTitle"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Hello here i'm alemam suvo"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:textColor="#BCFFFFFF"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/heartIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/white_heart"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:tag="heart"
+            style="?android:borderlessButtonStyle"
+            />
+
+    </RelativeLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/pdfscan"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

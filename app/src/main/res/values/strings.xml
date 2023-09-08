@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Virtual Library</string>
+
+    <string name="drawer_close">Close Drawer</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="nav_item_home"><font size="10">Home</font></string>
+    <string name="nav_item_notify"><font size="10">Notification</font></string>
+    <string name="nav_item_profile"><font size="10">Profile</font></string>
+    <string name="nav_item_wishlist"><font size="10">Favourite</font></string>
+    <string name="nav_item_add"><font size="10">Add</font></string>
+
+
+</resources>
